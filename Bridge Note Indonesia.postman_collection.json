@@ -1,0 +1,355 @@
+{
+	"info": {
+		"_postman_id": "7284f1f1-cb86-4948-a900-e8e04d0d4d68",
+		"name": "Bridge Note Indonesia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "customer status",
+			"item": [
+				{
+					"name": "get customer status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MTIyODUwNSwiZXhwIjoxNjQxMjMyMTA1LCJuYmYiOjE2NDEyMjg1MDUsImp0aSI6ImdPT2MyMlNQTlZLYzZlWnEiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.yyOfTknpRgGX1grs0IwrAqFv677-f2OlE09mblL44JQ",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}api/customer/status",
+							"host": [
+								"{{host}}api"
+							],
+							"path": [
+								"customer",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail customer status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MTIyODUwNSwiZXhwIjoxNjQxMjMyMTA1LCJuYmYiOjE2NDEyMjg1MDUsImp0aSI6ImdPT2MyMlNQTlZLYzZlWnEiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.yyOfTknpRgGX1grs0IwrAqFv677-f2OlE09mblL44JQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}api/customer/4",
+							"host": [
+								"{{host}}api"
+							],
+							"path": [
+								"customer",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store customer status",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MTIyODUwNSwiZXhwIjoxNjQxMjMyMTA1LCJuYmYiOjE2NDEyMjg1MDUsImp0aSI6ImdPT2MyMlNQTlZLYzZlWnEiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.yyOfTknpRgGX1grs0IwrAqFv677-f2OlE09mblL44JQ",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"active\",\n    \"position\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}api/customer/create",
+							"host": [
+								"{{host}}api"
+							],
+							"path": [
+								"customer",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update customer status",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MTIyODUwNSwiZXhwIjoxNjQxMjMyMTA1LCJuYmYiOjE2NDEyMjg1MDUsImp0aSI6ImdPT2MyMlNQTlZLYzZlWnEiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.yyOfTknpRgGX1grs0IwrAqFv677-f2OlE09mblL44JQ",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"inactive\",\n    \"position\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}api/update/5",
+							"host": [
+								"{{host}}api"
+							],
+							"path": [
+								"update",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete customer status",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MTIyODUwNSwiZXhwIjoxNjQxMjMyMTA1LCJuYmYiOjE2NDEyMjg1MDUsImp0aSI6ImdPT2MyMlNQTlZLYzZlWnEiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.yyOfTknpRgGX1grs0IwrAqFv677-f2OlE09mblL44JQ",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}api/delete/5",
+							"host": [
+								"{{host}}api"
+							],
+							"path": [
+								"delete",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "platform",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"ferri.susilo@yahoo.com\",\n    \"password\":\"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/register",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "platform",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"ferri.susilo@yahoo.com\",\n    \"password\":\"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/login",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "platform",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MTIyODQ2NSwiZXhwIjoxNjQxMjMyMDY1LCJuYmYiOjE2NDEyMjg0NjUsImp0aSI6InZFaWpQa0N5elFTc2x6eGciLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bUV0bPwq6u63HKEccOfHzlFAtKfGG6OsRjrmINKY3eM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/logout",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "platform",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MTIyODUwNSwiZXhwIjoxNjQxMjMyMTA1LCJuYmYiOjE2NDEyMjg1MDUsImp0aSI6ImdPT2MyMlNQTlZLYzZlWnEiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.yyOfTknpRgGX1grs0IwrAqFv677-f2OlE09mblL44JQ\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/get_user",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"get_user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
